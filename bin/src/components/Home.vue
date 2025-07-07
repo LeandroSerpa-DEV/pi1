@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Calculator />
     <AddContact v-on:add-contact="addContact" />
     <UpdateContact v-on:update-contact="updateContact" />
     <Contacts
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-import Calculator from "./Calculator.vue";
 import Contacts from "./Contacts.vue";
 import AddContact from "./AddContact.vue";
 import UpdateContact from "./UpdateContact.vue";
@@ -19,7 +17,6 @@ import axios from "axios";
 
 export default {
   components: {
-    Calculator,
     AddContact,
     UpdateContact,
     Contacts
